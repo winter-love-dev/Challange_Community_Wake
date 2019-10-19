@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray3"
+    android:orientation="vertical"
+    tools:context=".wake.FragmentMyPage.Fragment_MyPage">
+
+    <!--타이틀바-->
+    <LinearLayout
+        android:id="@+id/fra_mypage_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:paddingHorizontal="15dp"
+            android:text="마이 페이지"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fra_mypage_complain_manage_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            android:text="신고접수 처리"
+            android:textColor="@color/bg_main"
+            android:textSize="15dp"
+            android:visibility="gone"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/fra_mypage_tensor_flow_test"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingHorizontal="15dp"-->
+            <!--android:text="텐서플로우 테스트"-->
+            <!--android:textColor="@color/bg_main"-->
+            <!--android:textSize="15dp"-->
+            <!--/>-->
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--컨테이너 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--ic_person.png-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/fra_mypage_profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_person"
+                    app:civ_border_color="@color/bg_main"
+                    app:civ_border_width="5dp" />
+
+                <TextView
+                    android:id="@+id/fra_mypage_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="9dp"
+                    android:text="이름"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/fra_mypage_manager_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="15dp"
+                    android:text="관리자"
+                    android:textColor="@color/bg_main"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <!--<TextView-->
+                <!--android:background="@color/bg_main"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="신고 접수 처리하기"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="20dp"/>-->
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--</LinearLayout>-->
+
+
+                <!--상금카드-->
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/bg_main"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_menoey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="보유상금"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/fra_mypage_reword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="00원"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--컨테이커 1 끝-->
+
+            <!--컨테이너 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="획득 습관"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/fra_mypage_chart_more_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:text="더보기"
+                        android:textColor="@color/bg_main"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+
+                <com.github.mikephil.charting.charts.RadarChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+            <!--컨테이너 2 끝-->
+
+            <!--컨테이너 3-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fra_mypage_join_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <!--<LinearLayout-->
+            <!--android:background="@color/white"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="참여한 Wake Up!"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="18dp"/>-->
+
+
+            <!--<TextView-->
+            <!--android:text="더보기"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@color/bg_main"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<ImageView-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:background="@color/gray3"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="150dp" />-->
+
+            <!--</LinearLayout>-->
+            <!--&lt;!&ndash;컨테이너 3&ndash;&gt;-->
+
+            <!--todo: 컨테이너 3-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="18dp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/fra_mypage_join_list_more_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:text="지난 기록 더보기"-->
+            <!--android:textColor="@color/bg_main"-->
+            <!--android:textSize="18dp" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--&lt;!&ndash;컨테이너 3 끝&ndash;&gt;-->
+
+
+            <TextView
+                android:id="@+id/fra_mypage_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:background="@color/gray2"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="LOGOUT"
+                android:textColor="@color/gray"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

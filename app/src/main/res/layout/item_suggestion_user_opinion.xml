@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--유저들이 주제 제안 상세페이지에서 인증 방법을 댓글 형식으로 제안한다-->
+
+    <!--android:text="인증방법 제안 내용"-->
+    <TextView
+        android:id="@+id/item_Opinion_Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_height="0.1dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="13dp"
+        android:background="@color/gray" />
+
+</LinearLayout>

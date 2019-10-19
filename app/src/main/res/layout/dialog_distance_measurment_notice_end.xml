@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/dialog_distance_measurement_notice_end_frame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <ImageView
+        android:id="@+id/dialog_distance_measurement_notice_end_background"
+        android:src="@drawable/logo_1"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <LinearLayout
+        android:background="#88000000"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:text="인증 완료한 챌린지"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dialog_distance_measurement_notice_end_title"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:text="챌린지 제목"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:text="이동한 거리"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dialog_distance_measurement_notice_end_measurement"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:text="이동한 거리"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:text="인증한 날짜"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/dialog_distance_measurement_notice_end_date"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:text="인증한 날짜"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginHorizontal="20dp"-->
+            <!--android:paddingBottom="20dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="20dp"-->
+            <!--android:text="목적지에 도착했습니다\n\n보상을 확인하고 인증을 종료하세요\n\n"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_distance_measurement_notice_end_check"
+                android:background="@color/bg_main"
+                android:gravity="center"
+                android:padding="13dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:text="확인" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

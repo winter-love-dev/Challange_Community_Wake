@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wake.FragmentProof.Activity_Distance_Measurement">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#63000000"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginTop="10dp"
+                android:text="목적지까지 남은 거리"
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/distance_measurement_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="선택 안 함"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginTop="10dp"
+                android:text="이동할 거리"
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/distance_measurement_distance_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="선택 안 함"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginTop="10dp"
+                android:text="진행중인 챌린지"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/distance_measurement_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="챌린지 제목"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:id="@+id/distance_measurement_thumb"
+            android:src="@drawable/logo_1"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+    <!--<Button-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Start" />-->
+
+</FrameLayout>

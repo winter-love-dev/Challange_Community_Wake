@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Activity_Register">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo_2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical">
+
+        <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColorHint="@color/white">-->
+
+            <!--이름-->
+            <EditText
+                android:id="@+id/reg_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_edit_text_1"
+                android:gravity="center"
+                android:hint="이름"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20dp" />
+
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColorHint="@color/white">-->
+            <!--이메일-->
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/item_edit_text_1"
+                android:gravity="center"
+                android:hint="이메일"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20dp" />
+
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColorHint="@color/white">-->
+            <!--비밀번호-->
+            <EditText
+                android:id="@+id/reg_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/item_edit_text_1"
+                android:gravity="center"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20dp" />
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColorHint="@color/white">-->
+
+            <!--비밀번호 확인-->
+            <EditText
+                android:id="@+id/reg_pass_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/item_edit_text_1"
+                android:gravity="center"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20dp" />
+
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+        <ProgressBar
+            android:id="@+id/reg_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <!--가입버튼-->
+    <Button
+        android:id="@+id/reg_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/item_button_white"
+        android:text="가입하기"
+        android:textColor="@color/bg_main"
+        android:textSize="20dp" />
+
+    <!--저작권 표시-->
+    <!--모든 저작권은 김성훈에게 있습니다. 모든 페이지 내용의 소유권은 김성훈이 가지고 있습니다.-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Copyright(c)2019 by 김성훈. \n All Page content is \n property of 김성훈."
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white" />
+
+</LinearLayout>
+
+

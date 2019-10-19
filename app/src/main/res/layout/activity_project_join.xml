@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wake.FragmentHome.Activity_Project_Join">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="WebViewLayout">
+
+        <WebView
+        android:id="@+id/join_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/confirm_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="참가 완료\n\n'뒤로가기'를 누르면 홈 화면으로 이동"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!--<TextView-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/join_confirm_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/bg_main"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="25dp"-->
+        <!--android:text="마이페이지에서 확인하세요"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="25dp" />-->
+
+</LinearLayout>

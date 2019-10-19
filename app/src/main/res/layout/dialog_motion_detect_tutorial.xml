@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#88000000"
+    android:orientation="vertical">
+
+    <!--        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="00님의 동작을 감지합니다"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp"
+                android:text="선을 발 아래 두십시오"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />-->
+
+    <!--뷰페이저-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/work_info_image"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/view_page_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:text="0/0"
+            android:textSize="16dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            />
+
+    </FrameLayout>
+
+
+    <!--android:background="@drawable/item_home_list_image"-->
+
+    <TextView
+        android:id="@+id/dialog_motion_detect_tutorial_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/bg_main"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.tensorflow.lite.examples.detection">
+
+    <uses-sdk />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷 접속권한 -->
+
+    <!-- Used to enable and disable WiFi during work sessions -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 소켓 통신을 위한 와이파이 연결상태 체크 권한 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 소켓 통신을 위한 네트워크 연결상태 체크 권한 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.perm ission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/logo_5"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo_5"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:icon,android:roundIcon">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDE-vNYhg80KlpGcaosIW7f7xUIhtt8PlE" />
+
+        <activity android:name=".wake.Activity_Intro">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DetectorActivity"
+            android:label="@string/activity_name_detection"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".wake.FragmentProof.Activity_Distance_Measurement"></activity>
+
+        <activity android:name=".wake.FragmentMyPage.Activity_Exp_Detail_Info" />
+        <activity android:name=".wake.FragmentMyPage.Activity_Complain_detail" />
+        <activity android:name=".wake.FragmentMyPage.Activity_Complain_List" />
+        <activity android:name=".wake.FragmentProof.Activity_Finish_Project_Notice" />
+        <activity android:name=".wake.FragmentHome.Activity_Project_Detail_in_Certi_Shot_Detail" />
+        <activity android:name=".wake.FragmentProof.Activity_Certifying_Shot_List" />
+        <activity android:name=".wake.FragmentProof.Activity_Done_Certify" />
+        <activity android:name=".wake.FragmentProof.Activity_Certifying_Shot" />
+        <activity android:name=".wake.FragmentProof.Activity_Proof_Ready" /> <!-- 결제 페이지 -->
+        <activity
+            android:name=".wake.FragmentHome.Activity_Project_Join"
+            android:launchMode="singleTask">
+
+            <!-- 카카오페이 어플 인증후 앱으로 다시 호출하기 위한 스키마 설정 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="iamportkakao" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".wake.FragmentHome.Activity_Project_Detail_Page" />
+        <activity android:name=".wake.Produce_create.Activity_Product_Create_5" />
+        <activity android:name=".wake.Produce_create.Activity_Product_Create_4" />
+        <activity android:name=".wake.Produce_create.Activity_Product_Create_3" />
+        <activity android:name=".wake.Produce_create.Activity_Product_Create_2" />
+        <activity android:name=".wake.Produce_create.Activity_Product_Create_1" />
+        <activity android:name=".wake.Produce.Activity_Suggestion_Opinion_Write" />
+        <activity android:name=".wake.Produce.Activity_Suggestion_Detail" />
+        <activity android:name=".wake.Produce.Activity_Suggestion_Write" />
+        <activity android:name=".wake.Produce.Activity_produce_Suggestion_List" />
+        <activity
+            android:name=".wake.Activity_Home"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".wake.Activity_Register"
+            android:theme="@style/LoginAndRegister" />
+
+        <activity
+            android:name=".wake.Activity_Login"
+            android:theme="@style/LoginAndRegister" />
+
+        <!-- ImageCropper -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+    </application>
+</manifest>

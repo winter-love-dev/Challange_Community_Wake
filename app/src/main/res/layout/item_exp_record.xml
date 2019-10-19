@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/exp_record_challenge_thumb"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:background="#3E000000"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="참여한 챌린지"
+            android:paddingHorizontal="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/exp_record_challenge_title"
+            android:text="참여한 챌린지"
+            android:layout_marginHorizontal="7dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="획득한 점수"
+            android:paddingHorizontal="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/exp_record_get_exp"
+            android:text="획득한 점수"
+            android:layout_marginHorizontal="7dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="획득한 날짜"
+            android:paddingHorizontal="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/exp_record_get_exp_date"
+            android:text="획득한 날짜"
+            android:layout_marginHorizontal="7dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

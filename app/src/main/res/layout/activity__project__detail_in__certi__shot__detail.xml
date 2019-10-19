@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome.Activity_Project_Detail_in_Certi_Shot_Detail">
+
+    <!-- todo: 프로필 사진, 이름, 프로젝트 제목-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/feed_user_info_button"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/feed_user_photo"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/logo_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="이름"
+                android:textSize="18dp"
+                android:id="@+id/feed_user_name"
+                android:layout_marginHorizontal="7dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="챌린지 제목"
+                android:textSize="15dp"
+                android:id="@+id/feed_title"
+                android:layout_marginHorizontal="7dp"
+                android:textColor="@color/bg_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="인증 유형"
+            android:textSize="14dp"
+            android:id="@+id/feed_certi_type"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- 프로필 사진, 이름, 프로젝트 제목 끝-->
+
+    <!-- todo: 사진, 날짜 표시-->
+    <FrameLayout
+        android:id="@+id/feed_project_info_button"
+        android:layout_marginVertical="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:id="@+id/feed_project_thumb"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:id="@+id/feed_project_certi_date"
+            android:hint="인증 날짜"
+            android:textColorHint="@color/white"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="right|bottom"
+            android:textColor="@color/bg_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+    <!--사진, 날짜 표시 끝-->
+
+    <!--todo: 좋아요 버튼, 좋아요 수 표시, 신고 버튼, 신고 수 표시-->
+    <LinearLayout
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/feed_like_button"-->
+            <!--android:layout_marginHorizontal="7dp"-->
+            <!--android:src="@drawable/ic_feed_like_off"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="40dp" />-->
+
+        <TextView
+            android:id="@+id/feed_like_count"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/feed_declaration_count"
+            android:text="00"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:textColor="@color/bg_main"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_width="0.1dp"
+            app:civ_border_color="@color/bg_main"
+            android:id="@+id/feed_complain_button"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ic_feed_declaration"
+            android:layout_width="25dp"
+            android:layout_height="45dp" />
+
+    </LinearLayout>
+    <!--좋아요 버튼, 좋아요 수 표시, 신고 버튼, 신고 수 표시 끝-->
+
+</LinearLayout>

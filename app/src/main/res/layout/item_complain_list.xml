@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="챌린지 제목"
+            android:paddingHorizontal="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/bg_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/complain_challenge_title"
+            android:text="챌린지 제목"
+            android:layout_marginHorizontal="7dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="신고 내용"
+            android:paddingHorizontal="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/bg_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/complain_challenge_content"
+            android:text="신고 내용"
+            android:layout_marginHorizontal="7dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="챌린지 제목"
+            android:paddingHorizontal="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/bg_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="신고한 날짜"
+            android:id="@+id/complain_date"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="7dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/complain_thumb"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_5"
+        android:layout_width="140dp"
+        android:layout_height="140dp" />
+
+</LinearLayout>

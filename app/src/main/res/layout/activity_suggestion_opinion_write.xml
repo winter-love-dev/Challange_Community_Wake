@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/gray3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Produce.Activity_Suggestion_Opinion_Write">
+    <!--프로그램 주제 제안 상세화면-->
+
+    <!--타이틀바-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/produce_Suggestion_Opinion_Write_Titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="인증방법 제안하기"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/opinion_Write_Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="15dp"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="완료"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/opinion_Write"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="@color/white"
+        android:hint="인증 방법을 작성해주세요."
+        android:layout_marginBottom="15dp"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="7dp"
+        android:maxLines="100"
+        android:minLines="5"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="타인에게 불쾌감을 줄 수 있는 인증방법 제안시 영구정지 될 수 있습니다."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

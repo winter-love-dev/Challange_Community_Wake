@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentProof.Activity_Certifying_Shot">
+
+    <!--타이틀바-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/proof_serti_shot_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="인증샷을 촬영합니다"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/surfaceArea"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            />
+
+    </FrameLayout>
+
+    <!--<TextView-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="인증 시간"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginBottom="70dp"-->
+        <!--android:text="2019-00-00 00:00"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:textColor="@color/bg_main"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="120dp"
+        android:id="@+id/Serti_shot_button"
+        app:civ_border_color="@color/bg_main"
+        app:civ_border_width="4dp"
+        android:src="@drawable/ic_camera_camture"
+        android:layout_gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+</LinearLayout>

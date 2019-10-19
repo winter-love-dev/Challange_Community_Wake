@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wake.FragmentProof.Activity_Proof_Ready">
+
+    <!--타이틀바-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/proof_ready_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="챌린지 인증을 시작합니다"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--todo: 상단 프로젝트 정보 표시-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="인증할 챌린지"
+                android:paddingHorizontal="10dp"
+                android:textSize="10dp"
+                android:textColor="@color/bg_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/proof_ready_title"
+                android:text="제목"
+                android:paddingHorizontal="10dp"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="진행 기간"
+                android:paddingHorizontal="10dp"
+                android:textSize="10dp"
+                android:textColor="@color/bg_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/proof_ready_day"
+                android:text="진행기간"
+                android:paddingHorizontal="10dp"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="인증 제한시간"
+                android:paddingHorizontal="10dp"
+                android:textSize="10dp"
+                android:textColor="@color/bg_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/proof_ready_time"
+                android:text="인증할 시간"
+                android:paddingHorizontal="10dp"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="인증시 획득할 금액"
+                android:paddingHorizontal="10dp"
+                android:textSize="10dp"
+                android:textColor="@color/bg_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/proof_ready_reword"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp"
+                android:text="인증시 획득할 금액"
+                android:paddingHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_gravity="center"
+            android:layout_width="135dp"
+            android:layout_height="135dp">
+
+            <ImageView
+                android:id="@+id/proof_ready_thumb"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_5"
+                android:layout_width="140dp"
+                android:layout_height="140dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <!--상단 프로젝트 정보 표시 끝-->
+
+    <!--todo: 인증방법 표시 -->
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/bg_main"
+            android:layout_marginHorizontal="15dp"
+            android:text="인증 방법"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/proof_ready_proof_way"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:text="인증 방법"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/bg_main"
+            android:layout_marginHorizontal="15dp"
+            android:text="앨범 사용"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/proof_ready_album_use_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="가능/불가능"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <!-- 인증방법 표시 -->
+
+    <!--todo: 인증 시작버튼 -->
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/bg_main"
+            android:layout_marginHorizontal="15dp"
+            android:text="인증을 시작합니다"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/proof_ready_cam_use_area"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/proof_ready_cam_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_background_corner_main_color"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="촬영 시작"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/proof_ready_cam_album_button"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_background_corner_main_color"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="앨범에서 선택"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/proof_ready_distance_measurement_button"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_background_corner_main_color"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="측정 시작"
+                android:textSize="15dp" />
+
+
+            <!--물체인식 시작-->
+            <TextView
+                android:id="@+id/proof_ready_object_detect_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_background_corner_main_color"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="촬영 시작"
+                android:textSize="15dp" />
+
+
+            <!--자세인식 시작-->
+            <TextView
+                android:id="@+id/proof_ready_motion_detect_button"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_background_corner_main_color"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="촬영 시작"
+                android:textSize="15dp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

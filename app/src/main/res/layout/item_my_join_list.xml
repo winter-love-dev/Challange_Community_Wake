@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fra_mypage_my_join_p_title"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="참여한 챌린지 제목"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/fra_mypage_my_join_p_date"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="진행 기간"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fra_mypage_my_join_p_more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="버튼"
+            android:textColor="@color/bg_main"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="(습관)"
+                android:id="@+id/fra_mypage_my_join_p_category"
+                android:layout_gravity="center"
+                android:textColor="@color/bg_main"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/fra_mypage_my_join_p_category_score"
+                android:text="00점"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="누적 상금"
+                android:layout_gravity="center"
+                android:textColor="@color/bg_main"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="00점"
+                android:textSize="14dp"
+                android:gravity="bottom"
+                android:layout_gravity="center"
+                android:id="@+id/fra_mypage_my_join_p_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="달성률"
+                android:textColor="@color/bg_main"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/fra_mypage_my_join_p_progress_percent"
+                android:text="00%"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

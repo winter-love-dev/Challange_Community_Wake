@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <ImageView
+        android:id="@+id/dialog_distance_measurement_notice_background"
+        android:src="@drawable/logo_1"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <LinearLayout
+        android:background="#88000000"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:text="인증할 챌린지"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dialog_distance_measurement_notice_title"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:text="챌린지 제목"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="1. 지도에서 목적지를 클릭합니다\n\n2. 클릭한 목적지까지 이동하여\n\t\t\t 인증을 완료하세요"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_distance_measurement_notice_check"
+                android:background="@color/bg_main"
+                android:gravity="center"
+                android:padding="13dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:text="확인" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray3"
+    android:orientation="vertical"
+    tools:context=".wake.FragmentMyPage.Activity_Exp_Detail_Info">
+
+    <!--타이틀바-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/project_detail_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="습관점수 상세정보"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--todo: 습관점수 컨테이너-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <!--습관점수 컨테이너 수직 정렬 (왼 쪽) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--왼 쪽 수평정렬 1-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="역량"
+                            android:textColor="@color/bg_main"
+                            android:textSize="17dp" />
+
+
+                        <!--my_ability-->
+                        <!--my_health-->
+                        <!--my_life-->
+                        <!--my_hobby-->
+                        <!--my_relation-->
+                        <!--my_asset-->
+
+
+                        <TextView
+                            android:id="@+id/exp_detail_ability"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="00점"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                    <!--왼 쪽 수평정렬 2-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="건강"
+                            android:textColor="@color/bg_main"
+                            android:textSize="17dp" />
+
+                        <!--my_ability-->
+                        <!--my_health-->
+                        <!--my_life-->
+                        <!--my_hobby-->
+                        <!--my_relation-->
+                        <!--my_asset-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/exp_detail_health"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="00점"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                    <!--왼 쪽 수평정렬 3-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="관계"
+                            android:textColor="@color/bg_main"
+                            android:textSize="17dp" />
+
+                        <!--my_ability-->
+                        <!--my_health-->
+                        <!--my_life-->
+                        <!--my_hobby-->
+                        <!--my_relation-->
+                        <!--my_asset-->
+
+                        <TextView
+                            android:id="@+id/exp_detail_relation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="00점"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--습관점수 컨테이너 수직 정렬 (오른 쪽) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--오른 쪽 수평정렬 1-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="취미"
+                            android:textColor="@color/bg_main"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/exp_detail_hobby"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="00점"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                    <!--오른 쪽 수평정렬 2-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="생활"
+                            android:textColor="@color/bg_main"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/exp_detail_life"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="00점"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                    <!--오른 쪽 수평정렬 3-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="자산"
+                            android:textColor="@color/bg_main"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/exp_detail_asset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:text="00점"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--습관점수 컨테이너 끝-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exp_detail_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

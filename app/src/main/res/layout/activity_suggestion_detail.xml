@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray3"
+    android:orientation="vertical"
+    tools:context=".Produce.Activity_Suggestion_Detail">
+    <!--프로그램 주제 제안 상세화면-->
+
+    <!--타이틀바-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Suggestion_Detail_Title_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="프로그램 주제 제안"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="주제"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/Suggestion_Detail_Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="프로그램 주제"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <!--투표 수-->
+                <LinearLayout
+                    android:id="@+id/Suggestion_Detail_Vote_Level"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/bg_main"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Suggestion_Detail_Vote_Icon"
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:src="@drawable/outline_how_to_vote_white_48" />
+
+                    <TextView
+                        android:id="@+id/Suggestion_Detail_Like_Count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00명"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="인증 방법"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Suggestion_Opinion_Write"
+                    android:text="인증방법 제안하기"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:textColor="@color/bg_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--인증 방법 리사이클러뷰-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Suggestion_Opinion_RecyclerView"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

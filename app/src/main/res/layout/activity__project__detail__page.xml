@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray3"
+    android:orientation="vertical"
+    tools:context=".FragmentHome.Activity_Project_Detail_Page">
+
+    <!--타이틀바-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/project_detail_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="챌린지 상세정보"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--todo: 제목, 진행 기간, 참가 비용 등등의 정보-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/project_detail_thumb"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/logo_5" />
+
+                <LinearLayout
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/bg_main"
+                        android:id="@+id/project_detail_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="제목"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:textColor="@color/bg_main"
+                        android:id="@+id/project_detail_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="진행기간"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:textColor="@color/bg_main"
+                        android:id="@+id/project_detail_join_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="참가비용"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/project_detail_total_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="총 누적 참가비용"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/project_detail_people"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="참가 인원"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--제목, 진행 기간, 참가 비용 등등의 정보 끝-->
+
+
+            <!--todo: 프로젝트 소개, 인증 방법-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="챌린지 소개, 인증 방법"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/project_detail_Introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="내용 내용"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+            <!--프로젝트 소개, 인증 방법 끝-->
+
+            <!--todo: 경험치 안내-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="경험치 안내"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:id="@+id/project_Exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="이 챌린지를 완료하면 생활 점수 '00'점을획득합니다."
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+            <!--경험치 안내 끝-->
+
+            <!--todo: 진행 기간, 인증 방법-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginHorizontal="5dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="진행기간, 인증 방법"-->
+                <!--android:textSize="20dp" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--왼 쪽-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="인증 빈도"
+                            android:textColor="@color/bg_main"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="인증 시간"
+                            android:textColor="@color/bg_main"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="인증 방법"
+                            android:textColor="@color/bg_main"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/project_detail_album_use_"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="앨범 사용"
+                            android:textColor="@color/bg_main"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                    <!--왼 쪽 끝-->
+
+                    <!--오른 쪽-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/project_detail_certi_term"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:text="월 ~ 금"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/project_detail_certi_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="00시 ~ 00시"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/project_detail_way"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="인증샷, 방송"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/project_detail_album_use"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="가능, 불가능"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--진행 기간, 인증 방법 끝-->
+
+            <!--todo: 참가자 인증샷-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="참가자 인증샷"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/project_detail_users_certi_more_button"
+                        android:textColor="@color/bg_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="더보기"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/project_detail_users_certi_list"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"/>
+
+            </LinearLayout>
+            <!--참가자 인증샷 끝-->
+
+            <!--todo: 참가하기 버튼-->
+            <TextView
+                android:id="@+id/project_detail_join_button"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/bg_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="참가하기"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <!--스크롤뷰 끝-->
+
+    </ScrollView>
+    <!--스크롤뷰 끝-->
+
+</LinearLayout>
